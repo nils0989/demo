@@ -1,0 +1,31 @@
+{
+  "name": "node-js-demo",
+  "version": "1.0.0",
+  "description": "A demo for node.js web server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "node",
+    "router",
+    "web",
+    "server"
+  ],
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "consolidate": "^0.15.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "faunadb": "^2.0.2",
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.0.11",
+    "handlebars-helpers": "^0.10.0",
+    "hbs": "^4.0.1",
+    "lodash": "^4.17.10"
+  },
+  "author": "Simon Jun Sheng Liu",
+  "license": "MIT"
+}

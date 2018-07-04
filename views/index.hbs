@@ -1,0 +1,33 @@
+<style type="text/css">
+      .entry{
+           text-align: center; 
+      }
+      li{
+        display: inline-block
+      }
+</style>
+
+<div class="entry">
+  <h1>{{title}}</h1>
+  <div class="body"></div>
+  <div>
+    <input type='text' class='username'>userName</input><br>
+    <input type='password' class='pwd'>passWord</input>
+    <button class='logon'>{{btn}}</a></button>
+  </div>
+</div>
+<script>
+  var ajax = new XMLHttpRequest();
+  var ss = document.getElementsByClassName('logon')[0];
+  ss.addEventListener('click',function(){
+      var us=document.getElementsByClassName('username')[0].value;
+      var ps=document.getElementsByClassName('pwd')[0].value
+     ajax.open('get','');
+     ajax.send();
+     ajax.onreadystatechange = function () {
+   if (ajax.status==200) {
+　　　　window.location.href='/logon?name='+us+'&ps='+ps;
+  　　}
+}
+  })
+</script>

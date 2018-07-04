@@ -1,0 +1,23 @@
+<style type="text/css">
+      .entry{
+           text-align: center; 
+      }
+      li{
+        display: inline-block
+      }
+</style>
+
+<div class="entry">
+  <h1>{{title}}</h1>
+  <div class="body"></div>
+  <div>
+    {{{markdown (read "markdown/markdown.md")}}}
+  </div>
+  <button class='btn'>Print</button>
+</div>
+<script>
+  var ss = document.getElementsByClassName('btn')[0];
+  ss.addEventListener('click',function(){
+    window.print();
+  })
+</script>
